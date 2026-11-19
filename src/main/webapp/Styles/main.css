@@ -1,0 +1,92 @@
+body {
+    margin: 24px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.page {
+    max-width: 900px;
+}
+
+h2 {
+    color: #008b8b;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 9px 8px;
+    text-align: left;
+}
+
+th {
+    background: #fff;
+    font-weight: bold;
+}
+
+td form {
+    margin: 0;
+}
+
+input[type="submit"],
+button {
+    background: #f3f3f3;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    color: #111;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+input[type="number"] {
+    width: 42px;
+    height: 24px;
+    margin-right: 6px;
+}
+
+.index-price-column {
+    width: 22%;
+    text-align: center;
+}
+
+.index-action-column {
+    width: 18%;
+}
+
+.index-price {
+    text-align: right;
+}
+
+.cart-quantity-column,
+.cart-price-column,
+.cart-amount-column {
+    width: 12%;
+}
+
+.description {
+    width: 46%;
+}
+
+.cart-action-column {
+    width: 18%;
+}
+
+.quantity-note {
+    margin: 12px 0 8px;
+}
+
+.actions {
+    margin: 12px 0 0;
+}
+
+.action-row {
+    margin: 8px 0;
+}

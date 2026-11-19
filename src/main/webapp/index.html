@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>murach's Java Servelets and</title>
+    <link rel="stylesheet" href="Styles/main.css">
+</head>
+<body>
+    <div class="page">
+        <h2>CD list</h2>
+        <table>
+            <tr>
+                <th>Description</th>
+                <th class="index-price-column">Price</th>
+                <th class="index-action-column"></th>
+            </tr>
+            <tr>
+                <td>86 (the band) - True Life Songs and Pictures</td>
+                <td class="index-price">$14.95</td>
+                <td>
+                    <form action="cart" method="post">
+                        <input type="submit" value="Add To Cart">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="productCode" value="86">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Paddlefoot - The first CD</td>
+                <td class="index-price">$12.95</td>
+                <td>
+                    <form action="cart" method="post">
+                        <input type="submit" value="Add To Cart">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="productCode" value="paddle1">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Paddlefoot - The second CD</td>
+                <td class="index-price">$14.95</td>
+                <td>
+                    <form action="cart" method="post">
+                        <input type="submit" value="Add To Cart">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="productCode" value="paddle2">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Joe Rut - Genuine Wood Grained Finish</td>
+                <td class="index-price">$14.95</td>
+                <td>
+                    <form action="cart" method="post">
+                        <input type="submit" value="Add To Cart">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="productCode" value="jr01">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
