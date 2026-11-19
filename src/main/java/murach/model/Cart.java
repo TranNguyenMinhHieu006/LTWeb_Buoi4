@@ -12,8 +12,8 @@ public class Cart implements Serializable {
 
     public void addItem(LineItem item){
         for (LineItem existingItem : items) {
-            if (existingItem.getProduct().getCode()
-                    .equals(item.getProduct().getCode())) {
+            if (existingItem.getProduct().getID()
+                    .equals(item.getProduct().getID())) {
                 existingItem.setQuantity(existingItem.getQuantity() + item.getQuantity());
                 return;
             }
@@ -23,8 +23,8 @@ public class Cart implements Serializable {
 
     public void removeItem(LineItem item) {
         items.removeIf(existingItem ->
-                existingItem.getProduct().getCode()
-                        .equals(item.getProduct().getCode()));
+                existingItem.getProduct().getID()
+                        .equals(item.getProduct().getID()));
     }
 
     public ArrayList<LineItem> getItems() {

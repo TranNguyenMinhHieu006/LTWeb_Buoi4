@@ -25,7 +25,7 @@
                         <form action="cart" method="post">
                             <input type="number" name="quantity" value="${item.quantity}" min="1">
                             <input type="hidden" name="action" value="update">
-                            <input type="hidden" name="productCode" value="${item.product.code}">
+                            <input type="hidden" name="productCode" value="${item.product.ID}">
                             <input type="submit" value="Update">
                         </form>
                     </td>
@@ -35,7 +35,7 @@
                     <td>
                         <form action="cart" method="post">
                             <input type="hidden" name="action" value="remove">
-                            <input type="hidden" name="productCode" value="${item.product.code}">
+                            <input type="hidden" name="productCode" value="${item.product.ID}">
                             <input type="submit" value="Remove Item">
                         </form>
                     </td>

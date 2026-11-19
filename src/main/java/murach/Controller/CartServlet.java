@@ -64,7 +64,7 @@ public class CartServlet extends HttpServlet {
                 quantity = 1;
             }
             for (LineItem item : cart.getItems()) {
-                if (item.getProduct().getCode().equals(productCode)) {
+                if (item.getProduct().getID().equals(productCode)) {
                     item.setQuantity(quantity);
                     break;
                 }
@@ -72,7 +72,7 @@ public class CartServlet extends HttpServlet {
         } else if ("remove".equals(action)) {
             String productCode = request.getParameter("productCode");
             cart.getItems().removeIf(item ->
-                    item.getProduct().getCode().equals(productCode));
+                    item.getProduct().getID().equals(productCode));
         }
 
         request.getRequestDispatcher("/cart.jsp").forward(request, response);
