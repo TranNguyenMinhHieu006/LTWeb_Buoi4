@@ -73,6 +73,10 @@ public class CartServlet extends HttpServlet {
             String productCode = request.getParameter("productCode");
             cart.getItems().removeIf(item ->
                     item.getProduct().getID().equals(productCode));
+        } else if ("finish".equals(action)) {
+            session.removeAttribute("cart");
+            response.sendRedirect(request.getContextPath() + "/index.html");
+            return;
         }
 
         request.getRequestDispatcher("/cart.jsp").forward(request, response);
